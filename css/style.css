@@ -1,0 +1,111 @@
+/* Reset */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+html{
+    font-size: 62.5%;
+
+}
+body{
+    font: 1.6rem 'Poppins' ,sans-serif;
+    margin: 0;
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 100%);
+    
+}
+*{
+    box-sizing: border-box;
+}
+p{
+    line-height: 2.5rem;
+}
+address{
+    font-style: normal;
+}
+h1,h2,h3,p,blockquote,figure,ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+a{
+    text-decoration:none;
+    color: #222;
+}
+input {
+    border: 0;
+    font-size: inherit;
+    transition: all 0.5rem ease-in-out;
+}
+button, select {
+    border: 0;
+    background-color: transparent;
+    font-size: initial;
+    text-transform: capitalize;
+}
+
+
+/* thème */
+
+header{
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+header > h1{
+    line-height: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #545454;
+    font-size: 100%;
+    vertical-align: auto;
+    margin-top: 2rem;
+}
+
+
+header, main, footer{
+    max-width: 60rem;
+    padding: 1.0rem;
+    margin: 0 auto;
+}
+
+main h2 {
+    text-align: center;
+    margin: 1rem 0 4rem 0;
+    /* padding: 2rem; */
+}
+
+.quiz-header{
+    background-color: #fff;
+    border-radius: 1rem;
+    margin-top: 4rem;
+    box-shadow: 0 0 1rem .5rem rgba(100, 100, 100, 0.1);
+    /* padding: 2rem; */
+    overflow: hidden;
+}
+
+button {
+    background-color: #8e44ad;
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    color: white;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+button:hover {
+    background-color: #732d91;
+}
+
+ul li label {
+    cursor: pointer;
+}
+
+main ul li {
+    margin-left: 2rem;
+    line-height: 5rem;
+}
+
+main ul input {
+    margin-right: 2rem;
+    cursor: pointer;
+}
