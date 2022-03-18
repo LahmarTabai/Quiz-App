@@ -2,47 +2,47 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const quizData = [
         {
-            question: "How old is Tabai ? ",
-            a: '10',
-            b: '17',
-            c: '32',
-            d: '45',
+            question: "What do you think of Tabai ? ",
+            a: 'simple guy',
+            b: 'Ugly',
+            c: 'Mahboul Titaa',
+            d: 'I dont know',
             correct : 'c'
         },
 
         {
-            question: "What is the most used programming language in 2022 ?",
-            a: 'Python',
-            b: 'C',
-            c: 'JavaScript',
-            d: 'Java',
-            correct : 'd'
+            question: "Do you miss Tabai ?",
+            a: 'No',
+            b: 'I hate him',
+            c: 'I miss him a lot',
+            d: 'I dont Know',
+            correct : 'c'
         },
 
         {
-            question: "Who is The 1st President of the United States ?",
-            a: 'John Adams',
-            b: 'Thomas Jefferson',
-            c: 'Abraham Lincoln',
-            d: 'George Washington',
-            correct : 'd' 
+            question: "Do you believe that Tabai is in love with you ?",
+            a: 'Maybe',
+            b: 'I dont know',
+            c: 'Yes he worships me',
+            d: 'He is a lyer',
+            correct : 'c' 
         },
 
         {
-            question: "What does HTML stand for ? ",
-            a: 'Hypertext Markup Language',
-            b: 'Cascading Style Sheet',
-            c: 'Jason Object Notation',
-            d: 'Helicopters Terminals Motorboats Lamborginis',
-            correct : 'a' 
+            question: "Do You Love Tabai ? (9oul l7a9) ",
+            a: 'No',
+            b: 'Ma Yhemmekch',
+            c: 'I love him',
+            d: '9ilni',
+            correct : 'c' 
         },
 
         {
-            question: "In What year was JavaScript launched ?",
-            a: '1996',
-            b: '1995',
-            c: '1994',
-            d: 'none of the above',
+            question: "Do you wanna marry Tabai ?",
+            a: 'No',
+            b: 'Yeeees',
+            c: 'mazel bekri',
+            d: 'cha3ri a7rech',
             correct : 'b' 
         }
     ];
@@ -105,11 +105,23 @@ submitBtn.addEventListener("click", () => {
         currentQuiz++;
         if (currentQuiz < quizData.length) {
             loadQuiz();
-        } else {
+        } else if (score == quizData.length) {
             quiz.innerHTML = `<h2>You answered correctly at ${score}/${quizData.length} questions.</h2>
+                                <br><p>7ata ana N7ebek Baaaarchaaaa ya rou7i 🎔</p>
+                              <button onclick="location.reload()">Reload</button>`;
+        } else if (score < quizData.length) {
+            quiz.innerHTML = `<h2>You answered correctly at ${score}/${quizData.length} questions.</h2>
+                                <br><p>Mchamm3a 3awed...😡</p>
                               <button onclick="location.reload()">Reload</button>`;
         }
     }
 });
 
 });
+
+
+
+/* } else {
+            quiz.innerHTML = `<h2>You answered correctly at ${score}/${quizData.length} questions.</h2>
+                              <button onclick="location.reload()">Reload</button>`;
+        } */
