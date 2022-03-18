@@ -107,11 +107,11 @@ submitBtn.addEventListener("click", () => {
             loadQuiz();
         } else if (score == quizData.length) {
             quiz.innerHTML = `<h2>You answered correctly at ${score}/${quizData.length} questions.</h2>
-                                <br><p>7ata ana N7ebek Baaaarchaaaa ya rou7i 🎔</p>
+                                <br><p>7ata ana N7ebek Baaaarchaaaa ya rou7i <i class="fas fa-heart"></i></p>
                               <button onclick="location.reload()">Reload</button>`;
         } else if (score < quizData.length) {
             quiz.innerHTML = `<h2>You answered correctly at ${score}/${quizData.length} questions.</h2>
-                                <br><p>Mchamm3a 3awed...😡</p>
+                                <br><p>Mchamm3a 3awed...<i class="fas fa-angry"></i></p>
                               <button onclick="location.reload()">Reload</button>`;
         }
     }
